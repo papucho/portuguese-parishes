@@ -1,0 +1,15 @@
+{
+  "name": "portugal-zones",
+  "version": "1.0.0",
+  "description": "List of all the 'cities' of portugal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel/register spec/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3"
+  }
+}
