@@ -1,12 +1,15 @@
 {
-  "name": "portugal-zones",
-  "version": "1.0.0",
-  "description": "List of all the 'cities' of portugal.",
+  "name": "portuguese-parishes",
+  "version": "0.0.2",
+  "description": "List of all the Portuguese' parishes.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel/register spec/"
   },
-  "author": "",
+  "author": "Fernando Araújo <papucho86@gmail.com> (fernando-araujo.com)",
+  "keywords": [
+    "portugal", "parish", "portuguese", "parishes", "zip-code"
+  ],
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.3.0",

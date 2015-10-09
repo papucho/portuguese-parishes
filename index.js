@@ -1,16 +1,16 @@
-import ZONES from './lib/zones';
+import PARISHES from './lib/parishes';
 
 function all() {
-    return ZONES;
+    return PARISHES;
 }
 
-function getZone(property, fn) {
-    return (value) => ZONES[fn]((zone) => zone[property] === value);
+function getZone({property, fn = 'find'}) {
+    return (value) => PARISHES[fn]((zone) => zone[property] === value);
 }
 
 export default {
-    getById: getZone('id', 'find'),
-    getByArea: getZone('area', 'filter'),
-    getByName: getZone('name', 'filter'),
-    all
+    all,
+    getById: getZone({property: 'id'}),
+    getByName: getZone({property: 'name', fn: 'filter'}),
+    getByCountyName: getZone({property: 'county', fn: 'filter'})
 }

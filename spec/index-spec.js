@@ -1,38 +1,38 @@
 import {expect} from 'chai';
-import ZONES from '../lib/zones';
+import PARISHES from '../lib/parishes';
 import victim from '../index';
 
-describe('Zone', () => {
-    it('should be able to retreive all the zones', () => {
-        expect(victim.all()).to.equal(ZONES);
+describe('Index', () => {
+    it('should be able to retreive all the parishes', () => {
+        expect(victim.all()).to.equal(PARISHES);
     });
 
-    it('should get zones by id', () => {
-        let expectedResult = { id: 895, name: 'Belinho e Mar', area: 'Esposende' };
+    it('should get a parish by it\'s id', () => {
+        let expectedResult = { id: 895, name: 'Belinho e Mar', county: 'Esposende' };
         let response = victim.getById(895);
 
         expect(response).to.deep.equal(expectedResult);
     });
 
-    it('should get zones by name', () => {
-        let expectedResult = [{ id: 895, name: 'Belinho e Mar', area: 'Esposende' }];
+    it('should get all the parishes by a given name', () => {
+        let expectedResult = [{ id: 895, name: 'Belinho e Mar', county: 'Esposende' }];
         let response = victim.getByName('Belinho e Mar');
 
         expect(response).to.deep.equal(expectedResult);
     });
 
-    it('should get zones by area name', () => {
-        let response = victim.getByArea('Esposende');
+    it('should get all the parishes by the county name', () => {
+        let response = victim.getByCountyName('Esposende');
         let expectedResult = [
-            { id: 893, name: 'Antas', area: 'Esposende' },
-            { id: 894, name: 'Apúlia e Fão', area: 'Esposende' },
-            { id: 895, name: 'Belinho e Mar', area: 'Esposende' },
-            { id: 896, name: 'Esposende, Marinhas e Gandra', area: 'Esposende' },
-            { id: 897, name: 'Fonte Boa e Rio Tinto', area: 'Esposende' },
-            { id: 898, name: 'Forjães', area: 'Esposende' },
-            { id: 899, name: 'Gemeses', area: 'Esposende' },
-            { id: 900, name: 'Palmeira de Faro e Curvos', area: 'Esposende' },
-            { id: 901, name: 'Vila Chã', area: 'Esposende' }
+            { id: 893, name: 'Antas', county: 'Esposende' },
+            { id: 894, name: 'Apúlia e Fão', county: 'Esposende' },
+            { id: 895, name: 'Belinho e Mar', county: 'Esposende' },
+            { id: 896, name: 'Esposende, Marinhas e Gandra', county: 'Esposende' },
+            { id: 897, name: 'Fonte Boa e Rio Tinto', county: 'Esposende' },
+            { id: 898, name: 'Forjães', county: 'Esposende' },
+            { id: 899, name: 'Gemeses', county: 'Esposende' },
+            { id: 900, name: 'Palmeira de Faro e Curvos', county: 'Esposende' },
+            { id: 901, name: 'Vila Chã', county: 'Esposende' }
         ];
 
         expect(response).to.deep.equal(expectedResult);
