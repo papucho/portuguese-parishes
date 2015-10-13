@@ -12,5 +12,6 @@ export default {
     all,
     getById: getZone({property: 'id'}),
     getByName: getZone({property: 'name', fn: 'filter'}),
-    getByCountyName: getZone({property: 'county', fn: 'filter'})
+    getByCountyName: getZone({property: 'county', fn: 'filter'}),
+    getByDistrictName: getZone({property: 'district', fn: 'filter'})
 }
