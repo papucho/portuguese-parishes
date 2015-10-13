@@ -8,3 +8,4 @@ This uses ECMASCRIPT 6 and exports the following methods:
 - `getById()`
 - `getByName()`
 - `getByCountyName()`
+- `getByDistrictName()`

@@ -1,6 +1,6 @@
 {
   "name": "portuguese-parishes",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "List of all the Portuguese' parishes.",
   "main": "index.js",
   "scripts": {
