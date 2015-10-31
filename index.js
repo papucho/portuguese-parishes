@@ -1,4 +1,6 @@
-import PARISHES from './lib/parishes';
+import parishesLoader from './lib/parishes-loader';
+
+const PARISHES = parishesLoader.load();
 
 function all() {
     return PARISHES;

@@ -8,16 +8,20 @@
   },
   "author": "Fernando Araújo <papucho86@gmail.com> (fernando-araujo.com)",
   "keywords": [
-    "portugal", "parish", "portuguese", "parishes", "zip-code"
+    "portugal",
+    "parish",
+    "portuguese",
+    "parishes",
+    "zip-code"
   ],
-  "repository" :
-    {
-      "type" : "git",
-      "url" : "https://github.com/papucho/portuguese-parishes"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/papucho/portuguese-parishes"
   },
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.3.0",
-    "mocha": "^2.3.3"
+    "mocha": "^2.3.3",
+    "sinon": "^1.17.2"
   }
 }

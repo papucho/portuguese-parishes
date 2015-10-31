@@ -1,8 +1,10 @@
-import {expect} from 'chai';
-import PARISHES from '../lib/parishes';
-import victim from '../index';
+import { expect } from 'chai';
+import sinon      from 'sinon';
+import PARISHES   from '../lib/parishes';
+import victim     from '../index';
 
 describe('Index', () => {
+
     describe('.all()', () => {
         it('should be able to retreive all the parishes', () => {
             expect(victim.all()).to.equal(PARISHES);
