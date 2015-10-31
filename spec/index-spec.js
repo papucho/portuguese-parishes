@@ -15,7 +15,7 @@ describe('Index', () => {
 
     describe('.getById()', () => {
         it('should get a parish by it\'s id', () => {
-            let expectedResult = { "id": 1, "district": "District 1", "county": "County 1", "name": "Parish 1" };
+            let expectedResult = { id: 1, district: "District 1", county: "County 1", name: "Parish 1" };
             let response = victim.getById(1);
 
             expect(response).to.deep.equal(expectedResult);
@@ -24,7 +24,7 @@ describe('Index', () => {
 
     describe('.getByName()', () => {
         it('should get all the parishes by a given name', () => {
-            let expectedResult = [{ "id": 1, "district": "District 1", "county": "County 1", "name": "Parish 1" }];
+            let expectedResult = [{ id: 1, district: "District 1", county: "County 1", name: "Parish 1" }];
             let response = victim.getByName('Parish 1');
 
             expect(response).to.deep.equal(expectedResult);
@@ -35,8 +35,8 @@ describe('Index', () => {
         it('should get all the parishes by the county name', () => {
             let response = victim.getByCountyName('County 1');
             let expectedResult = [
-                { "id": 1, "district": "District 1", "county": "County 1", "name": "Parish 1" },
-                { "id": 2, "district": "District 1", "county": "County 1", "name": "Parish 2" }
+                { id: 1, district: "District 1", county: "County 1", name: "Parish 1" },
+                { id: 2, district: "District 1", county: "County 1", name: "Parish 2" }
             ];
 
             expect(response).to.deep.equal(expectedResult);
@@ -47,9 +47,9 @@ describe('Index', () => {
         it('should get all the parishes by the district name', () => {
             let response = victim.getByDistrictName('District 1');
             let expectedResult = [
-                { "id": 1, "district": "District 1", "county": "County 1", "name": "Parish 1" },
-                { "id": 2, "district": "District 1", "county": "County 1", "name": "Parish 2" },
-                { "id": 3, "district": "District 1", "county": "County 2", "name": "Parish 3" }
+                { id: 1, district: "District 1", county: "County 1", name: "Parish 1" },
+                { id: 2, district: "District 1", county: "County 1", name: "Parish 2" },
+                { id: 3, district: "District 1", county: "County 2", name: "Parish 3" }
             ];
 
             expect(response).to.deep.equal(expectedResult);
