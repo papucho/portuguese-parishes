@@ -4,7 +4,7 @@
   "description": "List of all the Portuguese' parishes.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel/register spec/"
+    "test": "mocha --compilers js:babel/register spec/**"
   },
   "author": "Fernando Araújo <papucho86@gmail.com> (fernando-araujo.com)",
   "keywords": [
