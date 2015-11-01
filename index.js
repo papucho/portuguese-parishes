@@ -1,4 +1,3 @@
-// import parishesLoader from './lib/parishes-loader';
 import PARISHES from './lib/parishes'
 
 function all() {
