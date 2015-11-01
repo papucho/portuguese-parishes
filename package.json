@@ -1,6 +1,6 @@
 {
   "name": "portuguese-parishes",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "List of all the Portuguese' parishes.",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,8 @@
     "parish",
     "portuguese",
     "parishes",
-    "zip-code"
+    "zip-code",
+    "districts"
   ],
   "repository": {
     "type": "git",

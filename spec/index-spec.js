@@ -55,4 +55,13 @@ describe('Index', () => {
             expect(response).to.deep.equal(expectedResult);
         });
     });
+
+    describe('.getDistrics()', () => {
+        it('should get all the available districts', () => {
+            let response = victim.getDistricts();
+            let expectedResult = ['District 1', 'District 2'];
+
+            expect(response).to.deep.equal(expectedResult);
+        })
+    });
 });
