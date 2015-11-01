@@ -1,10 +1,11 @@
 {
   "name": "portuguese-parishes",
-  "version": "0.2.1",
+  "version": "0.4.1",
   "description": "List of all the Portuguese' parishes.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel/register spec/**"
+    "test": "mocha --compilers js:babel/register spec/**",
+    "prepublish": "babel source -d dist"
   },
   "author": "Fernando Araújo <papucho86@gmail.com> (fernando-araujo.com)",
   "keywords": [

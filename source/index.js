@@ -1,4 +1,4 @@
-import PARISHES from './lib/parishes'
+import PARISHES from '../lib/parishes'
 
 function all() {
     return PARISHES;

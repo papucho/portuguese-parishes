@@ -2,8 +2,8 @@ import { expect } from 'chai';
 import proxyquire from 'proxyquire';
 import PARISHES_MOCK from './mocks/parishes-mock';
 
-let victim = proxyquire.noCallThru().load('../index', {
-    './lib/parishes': PARISHES_MOCK
+let victim = proxyquire.noCallThru().load('../source/index', {
+    '../lib/parishes': PARISHES_MOCK
 });
 
 describe('Index', () => {
